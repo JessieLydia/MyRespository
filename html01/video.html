@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="margin:0px">
+    <!--<video src="video/aa.mp4" autoplay loop></video>-->
+    <!--<video src="video/bb.webm" width="1025" loop autoplay></video>-->
+
+    <!--视频播放兼容写法:浏览器加载的时候就会从上往下一个个尝试
+        直到找到一个可以打开的格式为止
+    -->
+    <video autoplay>
+        <source src="video/aa.flv" type="video/x-flv"/>
+        <source src="video/aa.mp4" type="video/mp4"/>
+        <source src="video/aa.wmv" type="video/x-ms-wmv"/>
+    </video>
+</body>
+</html>
